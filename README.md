@@ -2,7 +2,7 @@
 <h3 align="center">BSc.IT Undergraduate | Aspiring AI Engineer | Data Analyst | Gamer 🚀</h3>
 
 
-
+![snake gif](https://github.com/YOURUSERNAME/YOURUSERNAME/blob/output/github-contribution-grid-snake.svg)
 ![snake gif](https://github.com/Tharindu336/Tharindu336/blob/output/github-contribution-grid-snake.svg)
 
 <p align="center">
@@ -36,15 +36,7 @@
 ![GitHub](https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=github)
 ![VSCode](https://img.shields.io/badge/VSCode-blue?style=for-the-badge&logo=visualstudiocode)
 
----
 
-## 📊 GitHub Stats
-
-![Stats](https://github-readme-stats.vercel.app/api?username=YOURUSERNAME&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME&layout=compact&theme=tokyonight)
-
----
 
 
 
