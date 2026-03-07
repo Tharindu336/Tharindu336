@@ -36,14 +36,4 @@
 ![GitHub](https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=github)
 ![VSCode](https://img.shields.io/badge/VSCode-blue?style=for-the-badge&logo=visualstudiocode)
 
-
-
-
-
-
-
-![snake gif](https://github.com/YOURUSERNAME/YOURUSERNAME/blob/output/github-contribution-grid-snake.svg)
-
----
-
 ⭐ *Always learning. Always building.*
