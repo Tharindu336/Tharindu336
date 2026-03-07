@@ -2,7 +2,7 @@
 <h3 align="center">BSc.IT Undergraduate | Aspiring AI Engineer | Data Analyst | Gamer 🚀</h3>
 
 
-![snake gif](https://github.com/YOURUSERNAME/YOURUSERNAME/blob/output/github-contribution-grid-snake.svg)
+
 ![snake gif](https://github.com/Tharindu336/Tharindu336/blob/output/github-contribution-grid-snake.svg)
 
 <p align="center">
