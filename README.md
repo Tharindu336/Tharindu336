@@ -1,5 +1,9 @@
 <h1 align="center">Hi 👋, I'm Tharindu Thisara</h1>
-<h3 align="center">Computer Science Student | Future Software Engineer 🚀</h3>
+<h3 align="center">BSc.IT Undergraduate | Aspiring AI Engineer | Data Analyst | Gamer 🚀</h3>
+
+## 🐍 Contribution Snake
+
+![snake gif](https://github.com/Tharindu336/Tharindu336/blob/output/github-contribution-grid-snake.svg)
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com/?lines=Passionate+Developer;AI+Explorer;React+Native+Builder;Always+Learning+New+Things&center=true&width=500&height=45">
