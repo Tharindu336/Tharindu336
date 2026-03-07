@@ -46,13 +46,9 @@
 
 ---
 
-## 🏆 GitHub Trophies
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=YOURUSERNAME&theme=algolia)
 
----
 
-## 🐍 Contribution Snake
 
 ![snake gif](https://github.com/YOURUSERNAME/YOURUSERNAME/blob/output/github-contribution-grid-snake.svg)
 
