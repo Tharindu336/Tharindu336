@@ -9,12 +9,12 @@
 
 ---
 
-## 🌟 About Me
+ 🌟 About Me
 
-- 🎓 **Computer Science Student** at BSc.IT  
+- 🎓 BSc.IT  
 - 💻 **Interests:** AI, Data Analytics, Software Engineering & Mobile Development  
-- 📱 **Currently building:** Mobile apps with **React Native**  
-- 🧠 **Learning:** Algorithms, AI, Scalable Systems, and cutting-edge tech  
+- 📱 **Currently building:** Mobile apps with **React Native** and **Expo Go** 
+- 🧠 **Learning:** Machine Learning, Reasoning, Scalable Systems, Internet of Things
 - 🎯 **Goal:** Build innovative technology that makes an impact  
 - 🎮 **Fun fact:** Gamer & tech enthusiast  
 
@@ -38,25 +38,4 @@
 ![Rasa](https://img.shields.io/badge/Rasa-orange?style=for-the-badge&logo=rasa)
 ![Protégé](https://img.shields.io/badge/Prot%C3%A9g%C3%A9-red?style=for-the-badge&logo=protege)
 
----
-
-## 📊 My GitHub Stats
-
-<p align="center">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Tharindu336&show_icons=true&hide_border=true&count_private=true&theme=radical" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tharindu336&hide_border=true&layout=compact&langs_count=8&theme=radical" />
-</p>
-
----
-
-## ⚡ Skills Radar
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=your-wakatime-username&theme=radical&hide_border=true" />
-</p>
-
-> Replace `Rosie` with your WakaTime username to show real coding activity and skill intensity.  
-
----
-
-⭐ *Curious, passionate, and always building. I believe in learning by doing and creating tech that matters.*
+ *Curious, passionate, and always building. I believe in learning by doing and creating tech that matters.*
