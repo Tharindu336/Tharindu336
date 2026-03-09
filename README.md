@@ -11,7 +11,8 @@
 
  🌟 About Me
 
-- 🎓 BSc.IT  
+- 🎓 Undergraduate - Bachelor of Science (Honors) in Information Technology Open University of Srilanka
+                      
 - 💻 **Interests:** AI, Data Analytics, Software Engineering & Mobile Development  
 - 📱 **Currently building:** Mobile apps with **React Native** and **Expo Go** 
 - 🧠 **Learning:** Machine Learning, Deep Learning, Artificial general Interligence , Internet of Things
