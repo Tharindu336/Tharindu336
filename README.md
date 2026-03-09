@@ -17,7 +17,7 @@
 - 📱 **Currently building:** Mobile apps with **React Native** and **Expo Go** 
 - 🧠 **Learning:** Machine Learning, Deep Learning, Artificial general Interligence , Internet of Things
 - 🎯 **Goal:** Build innovative technology that makes an impact  
-- 🎮 **Fun fact:** Gamer & tech enthusiast  
+- 🎮 **Fun fact:** Gamer & Medieval Explorer
 
 ---
 
