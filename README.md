@@ -14,7 +14,7 @@
 - 🎓 BSc.IT  
 - 💻 **Interests:** AI, Data Analytics, Software Engineering & Mobile Development  
 - 📱 **Currently building:** Mobile apps with **React Native** and **Expo Go** 
-- 🧠 **Learning:** Machine Learning, Reasoning, Scalable Systems, Internet of Things
+- 🧠 **Learning:** Machine Learning, Deep Learning, Artificial general Interligence , Internet of Things
 - 🎯 **Goal:** Build innovative technology that makes an impact  
 - 🎮 **Fun fact:** Gamer & tech enthusiast  
 
