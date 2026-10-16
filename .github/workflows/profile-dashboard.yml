@@ -1,0 +1,44 @@
+name: Refresh profile artwork
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/**'
+      - 'snake-engine.js'
+      - '.github/workflows/profile-dashboard.yml'
+
+concurrency:
+  group: profile-dashboard
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate the data calculations
+        run: node --test tests/profile-data.test.cjs tests/snake.test.cjs tests/gif.test.cjs tests/tracker.test.cjs
+      - name: Read public GitHub data and render the dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: Tharindu336
+        run: node scripts/generate-profile.cjs
+      - name: Save refreshed assets
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add generated/profile-data.json profile-cover.svg profile-activity.svg profile-tech.svg profile-snake-still.svg profile-snake.gif profile-data.js
+          if git diff --cached --quiet; then
+            echo 'No changes to publish.'
+          else
+            git commit -m 'Refresh public profile artwork [skip ci]'
+            git push
+          fi
