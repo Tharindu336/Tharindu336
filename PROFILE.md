@@ -1,10 +1,12 @@
 # Tharindu — Always building.
 
-The repository's profile README displays the glass-inspired artwork directly on the GitHub profile page. GitHub controls the surrounding profile layout; the cover, toolkit, Snake, and activity panels make up the custom profile design inside it.
+The profile README gives a glass-inspired preview and links to the interactive portfolio at https://tharindu336.github.io/Tharindu336/. GitHub controls the surrounding profile layout; the linked site provides the full custom interface and playable Snake game.
 
 ## Preview
 
-Run `node scripts/preview.cjs`, then open http://127.0.0.1:8000/ to preview the profile locally.
+Run `node scripts/preview.cjs`, then open http://127.0.0.1:8000/ to preview the interactive portfolio locally.
+
+The GitHub Pages workflow deploys the static portfolio on pushes to `main`. If the first deployment cannot enable Pages automatically, open the repository's **Settings → Pages**, select **GitHub Actions** as the build and deployment source, then rerun the **Deploy portfolio site** workflow.
 
 ## Upload the complete profile
 
@@ -17,11 +19,11 @@ The README displays these generated SVG files directly:
 - `profile-snake-still.svg`
 - `profile-activity.svg`
 
-GitHub profile pages keep GitHub's own layout and cannot run HTML, CSS, or JavaScript inside the README. The artwork is generated SVG and is shown directly in the profile README; no Pages deployment is required. The interactive portfolio remains available for local preview through the included Node server.
+GitHub profile pages keep GitHub's own layout and cannot run HTML, CSS, or JavaScript inside the README. The README displays generated artwork and an animated Snake preview; its portfolio link opens the interactive site.
 
 ## Visitor tracker
 
-The local preview's shared badge comes from [Komarev's profile-view counter](https://github.com/antonkomarev/github-profile-views-counter). It counts badge loads, not unique people or simultaneous online users. Refresh requests a new badge and may add a view; there is no automatic polling. Service availability and GitHub image caching affect updates.
+The shared profile-view badge comes from [Komarev's profile-view counter](https://github.com/antonkomarev/github-profile-views-counter). It counts badge loads, not unique people or simultaneous online users. Refresh requests a new badge and may add a view; there is no automatic polling. Service availability and GitHub image caching affect updates.
 
 The separate browser notebook counts page loads and seven-day history in local storage. Active time and interactions update for the current tab. Storage changes synchronize across tabs; restricted storage falls back to this visit. No browser notebook activity is sent to a server. Google Fonts and the badge are external requests.
 
@@ -41,7 +43,7 @@ Choose Let's play. Use arrows / WASD, swipe or directional buttons to steer. Spa
 
 The AI routes through the portal graph and around obstacles; when no food route exists it chooses the largest available region. It can lose and restarts automatically. Player bests are saved on the device; AI scores never replace them. Mode changes and Restart reset the run. Gameplay pauses offscreen, while the document is hidden, and during quick navigation. Reduce effects removes decorative motion while retaining gameplay.
 
-The README uses a still SVG of a deterministic simulation. The local preview contains the interactive game; GitHub README images cannot run game code.
+The README GIF runs a deterministic preview of the same game rules, with a still SVG available for reduced-motion preferences. The interactive portfolio includes the playable Snake arena; GitHub README images cannot run game code.
 
 ## Checks
 
