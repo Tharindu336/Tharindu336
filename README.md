@@ -1,38 +1,29 @@
 <p align="center">
-  <a href="https://tharindu336.github.io/Tharindu336/">
-    <img src="./profile-cover.svg" alt="Tharindu — always building. Open the glass portfolio." width="100%">
-  </a>
+  <img src="./profile-cover.svg" alt="Tharindu — Always building. A glass-inspired profile design." width="100%">
 </p>
 
 <p align="center">
-  <a href="https://tharindu336.github.io/Tharindu336/"><strong>OPEN THE INTERACTIVE GLASS PORTFOLIO ↗</strong></a>
+  <a href="https://www.linkedin.com/in/tharindu-abeysinghe-226a912b3/"><strong>LET'S CONNECT ↗</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/Tharindu336">GITHUB</a>
-  &nbsp; · &nbsp;
-  <a href="https://www.linkedin.com/in/tharindu-abeysinghe-226a912b3/">LET'S CONNECT ↗</a>
+  <a href="https://github.com/Tharindu336">EXPLORE MY CODE ↗</a>
 </p>
 
-I'm **Tharindu Abeysinghe**, a computer science student at **The Open University of Sri Lanka**, based in Kandy. I build software, explore intelligent systems, and learn by making things.
+<p align="center">
+  I'm <strong>Tharindu Abeysinghe</strong>, a computer science student and software builder in Kandy, Sri Lanka.
+  <br>
+  Curious by default. Always learning by making.
+</p>
 
-### The portfolio
+<p align="center">
+  <img src="./profile-tech.svg" alt="Glass-themed technology toolkit with real public repository language shares." width="100%">
+</p>
 
-The site brings together my interactive toolbox, live profile activity, contribution history, and a playable Snake game. Its glass-inspired design is built with plain HTML, CSS, and JavaScript.
+<p align="center">
+  <img src="./profile-snake-still.svg" alt="Glass-themed Snake game preview with portals, power-ups, combos, and autopilot." width="100%">
+</p>
 
-**The banner above opens the complete portfolio.** GitHub renders this profile README inside its own profile layout; the interactive site opens separately.
+<p align="center">
+  <img src="./profile-activity.svg" alt="Glass-themed GitHub contribution activity, streaks, and contribution calendar." width="100%">
+</p>
 
-### Run it locally
-
-```sh
-node scripts/preview.cjs
-```
-
-Then open <http://127.0.0.1:8000/>. The live profile tracker requires the included Node server; on GitHub Pages, browser-local activity still works, but the server-backed counter is unavailable.
-
-### Project checks
-
-```sh
-node --test tests/*.test.cjs
-node scripts/package-profile.cjs
-```
-
-See [setup and Snake controls](./PROFILE.md) and [tool icon licenses](./ICON-LICENSES.txt).
+<p align="center"><strong>LEARN. MAKE. REPEAT.</strong></p>

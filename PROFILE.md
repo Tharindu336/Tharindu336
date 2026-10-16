@@ -1,26 +1,27 @@
 # Tharindu — Always building.
 
-The repository contains the interactive glass-inspired portfolio and the compact profile README that links to it. GitHub always renders the README inside its own profile page; the linked site is the full custom design.
+The repository's profile README displays the glass-inspired artwork directly on the GitHub profile page. GitHub controls the surrounding profile layout; the cover, toolkit, Snake, and activity panels make up the custom profile design inside it.
 
 ## Preview
 
-Run `node scripts/preview.cjs`, then open http://127.0.0.1:8000/ for the website. The profile README banner links to `https://tharindu336.github.io/Tharindu336/`.
+Run `node scripts/preview.cjs`, then open http://127.0.0.1:8000/ to preview the profile locally.
 
 ## Upload the complete profile
 
-Run `node scripts/package-profile.cjs` to create `artifacts/tharindu-profile-upload.zip`. Extract the archive and upload **its contents**, retaining the file and folder structure, into the `Tharindu336/Tharindu336` repository root. Upload the actual files, not the ZIP itself. The ZIP contains the README, artwork, website, data snapshot, generator, workflow, docs, licenses and tests; it excludes local logs and screenshots.
+Run `node scripts/package-profile.cjs` to create `artifacts/tharindu-profile-upload.zip`. Extract the archive and upload **its contents**, retaining the file and folder structure, into the `Tharindu336/Tharindu336` repository root. Upload the actual files, not the ZIP itself. The ZIP contains the README, artwork, local preview, data snapshot, generator, workflow, docs, licenses and tests; it excludes local logs and screenshots.
 
-The profile banner needs this file beside README.md:
+The README displays these generated SVG files directly:
 
 - `profile-cover.svg`
+- `profile-tech.svg`
+- `profile-snake-still.svg`
+- `profile-activity.svg`
 
-The banner links to the interactive website. GitHub profile pages keep GitHub's own layout and cannot run the portfolio's HTML, CSS, or JavaScript inside the README. All website files and assets must be pushed to the repository, and GitHub Pages must be enabled to serve the live site. The README and the Pages website are separate surfaces.
-
-The playable website links target `https://tharindu336.github.io/Tharindu336/`. GitHub README pages display images and links; they cannot execute the game's JavaScript.
+GitHub profile pages keep GitHub's own layout and cannot run HTML, CSS, or JavaScript inside the README. The artwork is generated SVG and is shown directly in the profile README; no Pages deployment is required. The interactive portfolio remains available for local preview through the included Node server.
 
 ## Visitor tracker
 
-The shared badge comes from [Komarev's profile-view counter](https://github.com/antonkomarev/github-profile-views-counter). It counts badge loads, not unique people or simultaneous online users. Refresh requests a new badge and may add a view; there is no automatic polling. Service availability and GitHub image caching affect updates. The website shows loading and error states.
+The local preview's shared badge comes from [Komarev's profile-view counter](https://github.com/antonkomarev/github-profile-views-counter). It counts badge loads, not unique people or simultaneous online users. Refresh requests a new badge and may add a view; there is no automatic polling. Service availability and GitHub image caching affect updates.
 
 The separate browser notebook counts page loads and seven-day history in local storage. Active time and interactions update for the current tab. Storage changes synchronize across tabs; restricted storage falls back to this visit. No browser notebook activity is sent to a server. Google Fonts and the badge are external requests.
 
@@ -40,7 +41,7 @@ Choose Let's play. Use arrows / WASD, swipe or directional buttons to steer. Spa
 
 The AI routes through the portal graph and around obstacles; when no food route exists it chooses the largest available region. It can lose and restarts automatically. Player bests are saved on the device; AI scores never replace them. Mode changes and Restart reset the run. Gameplay pauses offscreen, while the document is hidden, and during quick navigation. Reduce effects removes decorative motion while retaining gameplay.
 
-The README GIF runs a deterministic simulation using the same rules. It is a looping preview, with a still SVG for reduced-motion preferences. Click through to the website to play.
+The README uses a still SVG of a deterministic simulation. The local preview contains the interactive game; GitHub README images cannot run game code.
 
 ## Checks
 
