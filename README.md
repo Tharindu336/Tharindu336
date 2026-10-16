@@ -35,4 +35,8 @@
   <img src="./profile-activity.svg" alt="Glass-themed GitHub contribution activity, streaks, and contribution calendar." width="100%">
 </p>
 
+<p align="center">
+  <img src="./profile-languages.svg" alt="Glass language badges showing the actual share of each language in owned public repositories." width="100%">
+</p>
+
 <p align="center"><strong>LEARN. MAKE. REPEAT.</strong></p>

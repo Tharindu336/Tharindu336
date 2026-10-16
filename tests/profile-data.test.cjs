@@ -1,5 +1,6 @@
 const {test}=require('node:test');const assert=require('node:assert/strict');
 const {calendarFromHTML,summarizeCalendar,languageSummary}=require('../scripts/profile-data.cjs');
+const {makeLanguageBadges}=require('../scripts/design-art.cjs');
 test('calendar parser reads counts from dated tooltips rather than intensity colors',()=>{
   const start=Date.parse('2025-10-17T00:00:00Z');let html='';
   for(let i=0;i<365;i++){const date=new Date(start+i*86400000).toISOString().slice(0,10),count=i===120?1234:i===364?7:0;html+=`<td data-date="${date}" id="day-${i}" data-level="1"></td><tool-tip for="day-${i}">${count?count.toLocaleString('en')+' contributions':'No contributions'} on a day.</tool-tip>`}
@@ -12,6 +13,10 @@ test('a streak remains active through today when yesterday has contributions',()
 });
 test('language percentages aggregate bytes, exclude notebook files, and sum to 100%',()=>{
   const languages=languageSummary([{Python:10,JavaScript:20,'Jupyter Notebook':1000},{Python:30,CSS:40}]);assert.equal(languages.find(l=>l.name==='Python').percent,40);assert.equal(languages.find(l=>l.name==='CSS').percent,40);assert.equal(languages.reduce((n,l)=>n+l.percent,0),100);assert.equal(languages.some(l=>l.name==='Jupyter Notebook'),false);assert.deepEqual(languageSummary([]),[]);
+});
+test('glass language badges render every language, share, and escaped label',()=>{
+  const svg=makeLanguageBadges({languages:[{name:'TypeScript',percent:62.5},{name:'A&B',percent:37.5}]});
+  assert.match(svg,/<title id="title">Glass language badges/);assert.match(svg,/TypeScript/);assert.match(svg,/A&amp;B/);assert.match(svg,/62\.5%/);assert.match(svg,/37\.5%/);assert.equal((svg.match(/<rect x="\d+" y="\d+" width="170" height="62"/g)||[]).length,2);
 });
 test('the saved dashboard contains a complete, consistent real-data snapshot',()=>{
   const data=require('../generated/profile-data.json');assert.equal(data.days.length,365);assert.equal(data.stats.total,data.days.reduce((n,d)=>n+d.count,0));assert.equal(data.stats.activeDays,data.days.filter(d=>d.count>0).length);assert.ok(Math.abs(data.languages.reduce((n,l)=>n+l.percent,0)-100)<1e-8);assert.match(data.generatedAt,/Z$/);

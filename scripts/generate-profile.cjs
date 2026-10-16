@@ -2,7 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { calendarFromHTML, summarizeCalendar, languageSummary, dateKey } = require('./profile-data.cjs');
-const { makeCover, makeLinkButton, makeDashboard, makeTechMeters, makeSnakeSVG } = require('./design-art.cjs');
+const { makeCover, makeLinkButton, makeLanguageBadges, makeDashboard, makeTechMeters, makeSnakeSVG } = require('./design-art.cjs');
 const { makeSnakeGIF } = require('./render-arcade.cjs');
 const root = path.resolve(__dirname, '..');
 const username = process.env.PROFILE_USERNAME || 'Tharindu336';
@@ -60,6 +60,7 @@ async function main() {
     'profile-cover.svg': makeCover(),
     'profile-link-portfolio.svg': makeLinkButton('portfolio'),
     'profile-link-connect.svg': makeLinkButton('connect'),
+    'profile-languages.svg': makeLanguageBadges(data),
     'profile-activity.svg': dashboard,
     'profile-tech.svg': makeTechMeters(data),
     'profile-snake-still.svg': snake,

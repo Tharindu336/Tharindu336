@@ -15,9 +15,12 @@ Run `node scripts/package-profile.cjs` to create `artifacts/tharindu-profile-upl
 The README displays these generated SVG files directly:
 
 - `profile-cover.svg`
+- `profile-link-portfolio.svg`
+- `profile-link-connect.svg`
 - `profile-tech.svg`
 - `profile-snake-still.svg`
 - `profile-activity.svg`
+- `profile-languages.svg`
 
 GitHub profile pages keep GitHub's own layout and cannot run HTML, CSS, or JavaScript inside the README. The README displays generated artwork and an animated Snake preview; its portfolio link opens the interactive site.
 
@@ -29,7 +32,7 @@ The separate browser notebook counts page loads and seven-day history in local s
 
 ## Tech meters and contribution data
 
-The meters use actual language bytes in owned public repositories, excluding forks and Jupyter Notebook files. They show code distribution, not proficiency. Sort by share or alphabetically. The Full toolkit tab includes the original 18 tools and filters.
+The meters and bottom language badges use actual language bytes in owned public repositories, excluding forks and Jupyter Notebook files. They show code distribution, not proficiency. Sort by share or alphabetically. The Full toolkit tab includes the original 18 tools and filters.
 
 GitHub totals, streaks and the explorable calendar use `generated/profile-data.json` and `profile-data.js`, with their timestamp shown on the site. The calendar covers 365 days; longest streaks are limited to that window. Current streaks allow yesterday if today has no activity. Public data may omit private activity.
 
