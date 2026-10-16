@@ -1,7 +1,7 @@
 {
   "username": "Tharindu336",
-  "generatedAt": "2026-10-16T12:19:28.419Z",
-  "calendarSource": "Public GitHub contribution calendar",
+  "generatedAt": "2026-10-16T13:34:48.322Z",
+  "calendarSource": "GitHub GraphQL contribution calendar",
   "user": {
     "name": "Tharindu Abeysinghe ",
     "url": "https://github.com/Tharindu336",
@@ -1545,32 +1545,32 @@
     {
       "name": "TypeScript",
       "bytes": 202365,
-      "percent": 40.7682436202982
+      "percent": 36.77417947958444
     },
     {
       "name": "JavaScript",
-      "bytes": 161246,
-      "percent": 32.48445240431202
+      "bytes": 183419,
+      "percent": 33.331273816944126
     },
     {
       "name": "CSS",
-      "bytes": 56079,
-      "percent": 11.297617344811123
+      "bytes": 91861,
+      "percent": 16.693167796674853
     },
     {
       "name": "Python",
       "bytes": 45047,
-      "percent": 9.075122033768551
+      "percent": 8.186032480996417
     },
     {
       "name": "HTML",
-      "bytes": 25402,
-      "percent": 5.117460650027499
+      "bytes": 21359,
+      "percent": 3.881400931507148
     },
     {
       "name": "Prolog",
       "bytes": 6240,
-      "percent": 1.2571039467825995
+      "percent": 1.1339454942930194
     }
   ],
   "languageScope": "Language bytes across owned public repositories; Jupyter Notebook files excluded.",
@@ -1578,7 +1578,7 @@
     {
       "name": "Tharindu336",
       "url": "https://github.com/Tharindu336/Tharindu336",
-      "pushedAt": "2026-10-16T12:12:31Z",
+      "pushedAt": "2026-10-16T13:34:32Z",
       "language": "JavaScript"
     },
     {
