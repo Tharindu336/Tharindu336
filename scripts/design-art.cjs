@@ -4,13 +4,61 @@ const text=(x,y,value,size=14,fill='#141414',extra='')=>`<text x="${x}" y="${y}"
 const mono=(x,y,value,size=11,fill='#6c6c64',extra='')=>text(x,y,value,size,fill,`letter-spacing="1" ${extra}`).replace('Arial,Helvetica,sans-serif','monospace');
 function frame(w,h,title,content,bg='#f7f6ef'){return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="title"><title id="title">${esc(title)}</title><rect width="${w}" height="${h}" rx="18" fill="${bg}"/>${content}</svg>`;}
 function makeCover(){
-  let b=mono(40,40,'THARINDU ABEYSINGHE',12,'#141414')+mono(1160,40,'KANDY, SRI LANKA / 07.29° N',10,'#141414','text-anchor="end"');
-  b+='<path d="M40 62H1160" stroke="#141414" stroke-opacity=".25"/>';
-  b+=text(34,187,'ALWAYS',110,'#141414','font-weight="900" letter-spacing="-7"')+text(34,294,'BUILDING.',110,'#141414','font-weight="900" letter-spacing="-7"');
-  b+=text(41,345,'Computer science student. Software builder. Curious by default.',18,'#343322');
-  b+='<g transform="translate(903 212)"><circle r="132" fill="none" stroke="#141414" stroke-width="1"/><circle r="100" fill="#141414"/><path d="M-54 32V-32Q-54-56-30-56H30Q54-56 54-32V32Q54 56 30 56H-10" fill="none" stroke="#ffe34b" stroke-width="27" stroke-linecap="round"/><circle cx="-13" cy="52" r="3" fill="#141414"/><circle cx="-13" cy="60" r="3" fill="#141414"/><path d="M-144 0H144M0-144V144" stroke="#141414" stroke-opacity=".2"/><circle cx="110" cy="-74" r="14" fill="#f7f6ef" stroke="#141414"/></g>';
-  b+='<path d="M40 384H1160" stroke="#141414" stroke-opacity=".25"/>'+mono(40,418,'SOFTWARE / CREATIVE SYSTEMS / THE LONG GAME',10,'#141414')+mono(1160,418,'LEARN. MAKE. REPEAT. ↗',11,'#141414','text-anchor="end"');
-  return frame(1200,448,'Tharindu Abeysinghe — Always building. Computer science student and software builder in Sri Lanka.',b,'#ffe34b');
+  const b=[
+    '<defs>',
+    '<linearGradient id="glass-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f7e9"/><stop offset=".48" stop-color="#d8eee2"/><stop offset="1" stop-color="#e2dcf2"/></linearGradient>',
+    '<linearGradient id="glass-panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".82"/><stop offset=".56" stop-color="#f5fff9" stop-opacity=".46"/><stop offset="1" stop-color="#e9e3f7" stop-opacity=".42"/></linearGradient>',
+    '<linearGradient id="glass-dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#385848" stop-opacity=".96"/><stop offset=".55" stop-color="#1d352e" stop-opacity=".96"/><stop offset="1" stop-color="#38324d" stop-opacity=".96"/></linearGradient>',
+    '<linearGradient id="glass-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff3aa"/><stop offset="1" stop-color="#ffdc4e"/></linearGradient>',
+    '<filter id="glass-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="12"/><feComponentTransfer><feFuncA type="linear" slope=".16"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
+    '<filter id="glass-glow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="20"/></filter>',
+    '</defs>',
+    '<rect width="1200" height="448" fill="url(#glass-bg)"/>',
+    '<circle cx="1100" cy="34" r="140" fill="#92d7b5" opacity=".3" filter="url(#glass-glow)"/>',
+    '<circle cx="930" cy="440" r="170" fill="#b7a7e3" opacity=".24" filter="url(#glass-glow)"/>',
+    '<circle cx="126" cy="26" r="125" fill="#ffe58b" opacity=".28" filter="url(#glass-glow)"/>',
+    '<rect x="24" y="20" width="1152" height="62" rx="24" fill="url(#glass-panel)" stroke="#fff" stroke-opacity=".94"/>',
+    '<path d="M48 21h1100" stroke="#fff" stroke-opacity=".8"/>',
+    text(50,58,'t↗',35,'#1c3026','font-weight="700" letter-spacing="-4"'),
+    mono(111,48,'THARINDU',11,'#20372c','font-weight="bold"'),
+    mono(111,63,'ALWAYS BUILDING.',7,'#718078'),
+    mono(843,57,'SOFTWARE  /  CREATIVE SYSTEMS  /  SRI LANKA',9,'#51645a'),
+    '<rect x="1067" y="33" width="86" height="35" rx="18" fill="#fff" fill-opacity=".65" stroke="#fff"/>',
+    mono(1110,55,'EXPLORE ↗',8,'#20372c','text-anchor="middle"'),
+    '<rect x="24" y="98" width="708" height="326" rx="30" fill="url(#glass-panel)" stroke="#fff" stroke-opacity=".96" filter="url(#glass-shadow)"/>',
+    '<path d="M46 99h650" stroke="#fff" stroke-opacity=".82"/>',
+    mono(58,138,'COMPUTER SCIENCE  /  CREATIVE SYSTEMS',9,'#425b4c'),
+    '<circle cx="47" cy="134" r="3" fill="#678b68"/>',
+    text(51,235,'Always',84,'#1b211c','font-weight="700" letter-spacing="-5"'),
+    text(51,316,'building.',84,'#1b211c','font-weight="700" letter-spacing="-5"'),
+    '<circle cx="346" cy="306" r="8" fill="#eadc87"/>',
+    text(59,362,"I'm Tharindu Abeysinghe. A student, software builder,",13,'#35463b'),
+    text(59,383,'and curious mind. Turning “what if” into “here it is.”',13,'#35463b'),
+    '<path d="M58 400h630" stroke="#56715e" stroke-opacity=".22"/>',
+    mono(59,415,'KANDY, SRI LANKA     LEARN. MAKE. REPEAT.',7,'#63746a'),
+    '<rect x="750" y="98" width="426" height="174" rx="30" fill="url(#glass-dark)" stroke="#f4fff6" stroke-opacity=".66" filter="url(#glass-shadow)"/>',
+    '<rect x="763" y="111" width="400" height="148" rx="21" fill="none" stroke="#f4fff6" stroke-opacity=".16"/>',
+    '<path d="M763 137h400M798 111v148M828 111v148M858 111v148M888 111v148M918 111v148M948 111v148M978 111v148M1008 111v148M1038 111v148M1068 111v148M1098 111v148M1128 111v148" stroke="#f4fff6" stroke-opacity=".055"/>',
+    '<circle cx="963" cy="184" r="57" fill="#b8ebc4" opacity=".2" filter="url(#glass-glow)"/>',
+    '<circle cx="963" cy="184" r="66" fill="none" stroke="#f1df75" stroke-opacity=".34"/>',
+    '<path d="M924 196v-35q0-17 17-17h45q17 0 17 17v35q0 17-17 17h-33" fill="none" stroke="url(#glass-gold)" stroke-width="23" stroke-linecap="round"/>',
+    '<circle cx="951" cy="215" r="3" fill="#1d352e"/><circle cx="951" cy="222" r="3" fill="#1d352e"/>',
+    mono(780,248,'FOLLOW THE CURIOSITY ↗',7,'#f1df75'),
+    mono(1137,126,'336',8,'#e1eee3','text-anchor="end"'),
+    '<rect x="750" y="288" width="426" height="136" rx="30" fill="url(#glass-panel)" stroke="#fff" stroke-opacity=".96" filter="url(#glass-shadow)"/>',
+    '<rect x="770" y="307" width="75" height="23" rx="12" fill="#fff" fill-opacity=".76" stroke="#fff"/>',
+    '<rect x="853" y="307" width="74" height="23" rx="12" fill="#fff" fill-opacity=".45" stroke="#fff" stroke-opacity=".7"/>',
+    '<rect x="935" y="307" width="80" height="23" rx="12" fill="#fff" fill-opacity=".45" stroke="#fff" stroke-opacity=".7"/>',
+    mono(807,322,'BUILDING',6,'#40594a','text-anchor="middle"'),
+    mono(890,322,'LEARNING',6,'#607168','text-anchor="middle"'),
+    mono(975,322,'EXPLORING',6,'#607168','text-anchor="middle"'),
+    text(772,354,'Thoughtful interfaces. Useful software.',11,'#35463b'),
+    text(772,373,'Ideas made clearer through interaction.',11,'#35463b'),
+    '<path d="M772 395h382" stroke="#56715e" stroke-opacity=".2"/>',
+    text(772,412,"LET'S CONNECT",9,'#20372c','font-weight="bold"'),
+    text(1147,413,'↗',17,'#20372c','font-weight="bold"')
+  ].join('');
+  return frame(1200,448,'Tharindu Abeysinghe — A glass-inspired preview of the interactive portfolio.',b,'#e8eee8');
 }
 function makeTechMeters(data){
   const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),scope={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../tools.js'),'utf8'),scope);const tools=scope.window.PORTFOLIO_TOOLS;

@@ -1,26 +1,22 @@
 # Tharindu — Always building.
 
-A complete redesign of the GitHub profile and its companion website. Yellow, black and warm white; new artwork, typography and layout throughout. The previous command deck, old SVG sections, project cards and ML activities have been removed.
+The repository contains the interactive glass-inspired portfolio and the compact profile README that links to it. GitHub always renders the README inside its own profile page; the linked site is the full custom design.
 
 ## Preview
 
-Run `node scripts/preview.cjs`, then open http://127.0.0.1:8000/ for the website. Run `node scripts/readme-preview.cjs` and visit http://127.0.0.1:8000/artifacts/readme-preview.html for a visual preview of the README artwork. The actual README is rendered by GitHub when uploaded.
+Run `node scripts/preview.cjs`, then open http://127.0.0.1:8000/ for the website. The profile README banner links to `https://tharindu336.github.io/Tharindu336/`.
 
 ## Upload the complete profile
 
 Run `node scripts/package-profile.cjs` to create `artifacts/tharindu-profile-upload.zip`. Extract the archive and upload **its contents**, retaining the file and folder structure, into the `Tharindu336/Tharindu336` repository root. Upload the actual files, not the ZIP itself. The ZIP contains the README, artwork, website, data snapshot, generator, workflow, docs, licenses and tests; it excludes local logs and screenshots.
 
-The README needs these **five files beside README.md**:
+The profile banner needs this file beside README.md:
 
 - `profile-cover.svg`
-- `profile-tech.svg`
-- `profile-snake.gif`
-- `profile-snake-still.svg`
-- `profile-activity.svg`
 
-The screenshot of the old profile showed missing images. Pasting only the README cannot upload the images it references. All new references are validated during packaging and all artwork is checked in a browser. Local editing has not changed the live GitHub profile.
+The banner links to the interactive website. GitHub profile pages keep GitHub's own layout and cannot run the portfolio's HTML, CSS, or JavaScript inside the README. All website files and assets must be pushed to the repository, and GitHub Pages must be enabled to serve the live site. The README and the Pages website are separate surfaces.
 
-The playable website links target `https://tharindu336.github.io/Tharindu336/`. To serve the companion website there, enable GitHub Pages for this repository using the branch containing these files and the repository root as its source. GitHub README pages display images, links and the animated GIF; they cannot execute the game's JavaScript.
+The playable website links target `https://tharindu336.github.io/Tharindu336/`. GitHub README pages display images and links; they cannot execute the game's JavaScript.
 
 ## Visitor tracker
 
