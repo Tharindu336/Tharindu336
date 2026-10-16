@@ -32,7 +32,7 @@ jobs:
       - name: Prepare the static site
         run: |
           mkdir -p _site
-          cp index.html styles.css refinements.css glass.css app.js tracker.js snake-engine.js snake.js tools.js profile-data.js profile-cover.svg profile-tech.svg profile-activity.svg profile-snake-still.svg profile-snake.gif _site/
+          cp index.html layout.css glass.css app.js tracker.js snake-engine.js snake.js tools.js profile-data.js profile-cover.svg profile-tech.svg profile-activity.svg profile-snake-still.svg profile-snake.gif _site/
 
       - name: Upload the portfolio site
         uses: actions/upload-pages-artifact@v3

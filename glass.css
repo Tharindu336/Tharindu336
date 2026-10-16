@@ -512,6 +512,154 @@ dialog {
   }
 }
 
+/* Component finish: rounded optical glass and fine light-catching separators. */
+.menu-button,
+.stack-tabs,
+.stack-tabs button,
+.tool-filters button,
+.view-range button,
+.approach-tabs button,
+.calendar-controls button,
+.snake-rule-switch,
+.snake-rule-switch button,
+.button,
+.game-small-actions button,
+.dpad button,
+#snake-motion,
+.local-total > span,
+.live-profile-foot button,
+.counter-bottom button,
+.dialog-top button {
+  border-radius: 999px;
+}
+
+.intro-main,
+.identity-art,
+.identity-note,
+.visitor-card,
+.live-profile-card,
+.calendar-card,
+.contact,
+.snake-arena,
+.tool-inspector,
+dialog {
+  border-radius: 30px;
+}
+
+.toolbox {
+  border-radius: 36px;
+}
+
+.section-label {
+  border-bottom: 1px solid rgba(34, 57, 42, .14);
+}
+
+.intro-index,
+.stage-top,
+.stage-bottom,
+.snake-footer,
+.live-profile-foot,
+.contact > a {
+  border-color: rgba(255, 255, 255, .22);
+}
+
+.intro-index {
+  border-top: 1px solid rgba(25, 26, 23, .18);
+}
+
+.stage-top {
+  border-bottom: 1px solid rgba(226, 255, 233, .16);
+}
+
+.stage-bottom,
+.snake-footer {
+  border-top: 1px solid rgba(226, 255, 233, .16);
+}
+
+.snake-stats {
+  border-block: 1px solid rgba(226, 255, 233, .16);
+}
+
+.snake-stage {
+  border-right: 1px solid rgba(226, 255, 233, .16);
+}
+
+.tech-entry {
+  border-bottom: 1px solid rgba(229, 255, 235, .2);
+}
+
+.text-link {
+  border-bottom: 1px solid rgba(34, 57, 42, .2);
+}
+
+.circle-link {
+  border: 1px solid rgba(25, 26, 23, .34);
+}
+
+.art-orbit {
+  border: 1px solid rgba(255, 227, 75, .22);
+}
+
+.toolbox .tool-card,
+.tool-search input,
+.tool-inspector,
+.snake-score,
+.snake-stats > div,
+.snake-rule-switch,
+.button.outline,
+.game-small-actions button,
+.dpad button,
+#snake-motion {
+  border-radius: 18px;
+}
+
+.toolbox .tool-filters button,
+.toolbox .stack-tabs,
+.toolbox .stack-tabs button,
+.snake-rule-switch,
+.snake-rule-switch button {
+  border-radius: 999px;
+}
+
+.toolbox .tool-card:hover,
+.toolbox .tool-card[aria-pressed=true] {
+  border-color: rgba(255, 246, 179, .9);
+}
+
+@media (max-width: 760px) {
+  .snake-stage {
+    border-right: 0;
+    border-bottom: 1px solid rgba(226, 255, 233, .16);
+  }
+
+  .intro-main,
+  .identity-art,
+  .visitor-card,
+  .live-profile-card,
+  .calendar-card,
+  .contact,
+  .snake-arena {
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .toolbox {
+    border-radius: 26px;
+  }
+
+  .intro-main,
+  .identity-art,
+  .identity-note,
+  .visitor-card,
+  .live-profile-card,
+  .calendar-card,
+  .contact,
+  .snake-arena {
+    border-radius: 20px;
+  }
+}
+
 body {
   background:
     radial-gradient(ellipse at 8% 7%, rgba(255, 221, 91, .4), transparent 31rem),
@@ -1254,5 +1402,41 @@ body {
   .snake-rule-switch button:active,
   .toolbox .tool-card:active {
     transform: none;
+  }
+}
+
+.live-totals {
+  border-left: 1px solid rgba(255, 255, 255, .34);
+}
+
+.live-profile-foot {
+  border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.stage-top > span:first-child {
+  border: 1px solid rgba(225, 255, 232, .28);
+  border-radius: 999px;
+}
+
+#command-search {
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: inset 0 1px 0 #fff;
+}
+
+.contribution-grid button {
+  border-radius: 4px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.contribution-grid button:hover,
+.contribution-grid button:focus-visible {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .85), 0 4px 12px rgba(32, 48, 39, .2);
+}
+
+@media (max-width: 760px) {
+  .live-totals {
+    border-left: 0;
   }
 }
