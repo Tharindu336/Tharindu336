@@ -1,13 +1,17 @@
 <p align="center">
-  <a href="https://tharindu336.github.io/Tharindu336/">
+  <a href="https://tharindu-portfolio-rho.vercel.app/">
     <img src="./profile-cover.svg" alt="Tharindu — Always building. Open the interactive glass portfolio." width="100%">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://tharindu336.github.io/Tharindu336/"><img src="./profile-link-portfolio.svg" alt="Open the interactive glass portfolio" width="300"></a>
+  <a href="https://tharindu-portfolio-rho.vercel.app/"><img src="./profile-link-portfolio.svg" alt="Open the interactive glass portfolio" width="300"></a>
   &nbsp;
   <a href="https://www.linkedin.com/in/tharindu-abeysinghe-226a912b3/"><img src="./profile-link-connect.svg" alt="Let's connect on LinkedIn" width="300"></a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Tharindu336&amp;label=PROFILE+VISITORS&amp;color=456b55&amp;style=for-the-badge" alt="GitHub profile visitor count">
 </p>
 
 <p align="center">

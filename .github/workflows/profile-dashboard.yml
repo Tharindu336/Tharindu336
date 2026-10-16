@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add generated/profile-data.json profile-cover.svg profile-activity.svg profile-tech.svg profile-snake-still.svg profile-snake.gif profile-data.js
+          git add generated/profile-data.json profile-cover.svg profile-link-portfolio.svg profile-link-connect.svg profile-activity.svg profile-tech.svg profile-snake-still.svg profile-snake.gif profile-data.js
           if git diff --cached --quiet; then
             echo 'No changes to publish.'
           else

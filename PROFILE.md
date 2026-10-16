@@ -1,6 +1,6 @@
 # Tharindu — Always building.
 
-The profile README gives a glass-inspired preview and links to the interactive portfolio at https://tharindu336.github.io/Tharindu336/. GitHub controls the surrounding profile layout; the linked site provides the full custom interface and playable Snake game.
+The profile README gives a glass-inspired preview and links to the interactive portfolio at https://tharindu-portfolio-rho.vercel.app/. GitHub controls the surrounding profile layout; the linked site provides the full custom interface and playable Snake game.
 
 ## Preview
 
@@ -23,7 +23,7 @@ GitHub profile pages keep GitHub's own layout and cannot run HTML, CSS, or JavaS
 
 ## Visitor tracker
 
-The shared profile-view badge comes from [Komarev's profile-view counter](https://github.com/antonkomarev/github-profile-views-counter). It counts badge loads, not unique people or simultaneous online users. Refresh requests a new badge and may add a view; there is no automatic polling. Service availability and GitHub image caching affect updates.
+The shared profile-view badge in the README comes from [Komarev's profile-view counter](https://github.com/antonkomarev/github-profile-views-counter). It counts badge loads, not unique people or simultaneous online users. Refresh requests a new badge and may add a view; there is no automatic polling. Service availability and GitHub image caching affect updates.
 
 The separate browser notebook counts page loads and seven-day history in local storage. Active time and interactions update for the current tab. Storage changes synchronize across tabs; restricted storage falls back to this visit. No browser notebook activity is sent to a server. Google Fonts and the badge are external requests.
 
