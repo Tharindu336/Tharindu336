@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://tharindu336.github.io/Tharindu336/"><strong>OPEN THE INTERACTIVE GLASS PORTFOLIO ↗</strong></a>
-  &nbsp; · &nbsp;
-  <a href="https://www.linkedin.com/in/tharindu-abeysinghe-226a912b3/">LET'S CONNECT ↗</a>
+  <a href="https://tharindu336.github.io/Tharindu336/"><img src="./profile-link-portfolio.svg" alt="Open the interactive glass portfolio" width="300"></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/tharindu-abeysinghe-226a912b3/"><img src="./profile-link-connect.svg" alt="Let's connect on LinkedIn" width="300"></a>
 </p>
 
 <p align="center">

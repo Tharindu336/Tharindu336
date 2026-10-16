@@ -60,6 +60,12 @@ function makeCover(){
   ].join('');
   return frame(1200,448,'Tharindu Abeysinghe — A glass-inspired preview of the interactive portfolio.',b,'#e8eee8');
 }
+function makeLinkButton(kind){
+  const portfolio=kind==='portfolio',id=portfolio?'portfolio':'connect',label=portfolio?'OPEN PORTFOLIO':'LET’S CONNECT',detail=portfolio?'INTERACTIVE GLASS EXPERIENCE':'SAY HELLO / BUILD SOMETHING';
+  const tint=portfolio?['#f1dfa0','#b9dfc5','#c2b4e4']:['#d4c7f0','#c6e2d1','#f0dfae'];
+  const b=`<defs><linearGradient id="${id}-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${tint[0]}"/><stop offset=".52" stop-color="${tint[1]}"/><stop offset="1" stop-color="${tint[2]}"/></linearGradient><linearGradient id="${id}-glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".86"/><stop offset=".55" stop-color="#f8fffb" stop-opacity=".52"/><stop offset="1" stop-color="#eee9fa" stop-opacity=".44"/></linearGradient><linearGradient id="${id}-icon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#385c48"/><stop offset="1" stop-color="#493e68"/></linearGradient></defs><rect x="1" y="1" width="358" height="82" rx="25" fill="url(#${id}-bg)" stroke="#fff" stroke-opacity=".8"/><circle cx="329" cy="9" r="44" fill="#fff" opacity=".14"/><rect x="7" y="6" width="346" height="70" rx="21" fill="url(#${id}-glass)" stroke="#fff" stroke-opacity=".94"/><path d="M27 7h286" stroke="#fff" stroke-opacity=".8"/><rect x="20" y="17" width="48" height="48" rx="17" fill="url(#${id}-icon)"/><path d="${portfolio?'M36 49V33q0-7 7-7h7q7 0 7 7v5q0 7-7 7h-8':'M32 32h24v17H32z M33 33l11 9 11-9'}" fill="none" stroke="#f8edbb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><text x="84" y="37" fill="#20372c" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing=".8">${label}</text><text x="84" y="54" fill="#61766a" font-family="monospace" font-size="7" letter-spacing="1.15">${detail}</text><circle cx="326" cy="41" r="15" fill="#fff" fill-opacity=".66" stroke="#fff"/><path d="M320 41h11m-5-5 5 5-5 5" fill="none" stroke="#294333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>`;
+  return frame(360,84,portfolio?'Open the interactive glass portfolio':'Connect with Tharindu',b,'#e8eee8');
+}
 function makeTechMeters(data){
   const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),scope={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../tools.js'),'utf8'),scope);const tools=scope.window.PORTFOLIO_TOOLS;
   const hues=['#d4ad35','#8bb993','#75aaa7','#a494c9','#d58d68','#899b76'];
@@ -95,4 +101,4 @@ function makeSnakeSVG(){
   s.obstacles.forEach(p=>b+=`<rect x="${647+p.x*24}" y="${73+p.y*20}" width="18" height="16" rx="6" fill="#b5d8bd" fill-opacity=".24" stroke="#dfffe5" stroke-opacity=".3"/>`);s.portals.forEach(p=>b+=`<circle cx="${656+p.x*24}" cy="${82+p.y*20}" r="10" fill="#b6a6ff" fill-opacity=".12" stroke="#d3caff" stroke-width="3"/>`);s.body.forEach((p,i)=>b+=`<rect x="${646+p.x*24}" y="${72+p.y*20}" width="20" height="18" rx="7" fill="${i===0?'#fff0a8':'#9ed8aa'}" stroke="#fff" stroke-opacity=".5" opacity="${Math.max(.4,1-i*.035)}"/>`);if(s.food)b+=`<circle cx="${656+s.food.x*24}" cy="${82+s.food.y*20}" r="7" fill="#ffdf63" stroke="#fff4bd" stroke-width="2"/>`;
   return frame(1200,540,'Glass-inspired Snake game preview with linked portals, power-ups, combos and an autopilot.',b,'#e8eee8');
 }
-module.exports={makeCover,makeTechMeters,makeDashboard,makeSnakeSVG};
+module.exports={makeCover,makeLinkButton,makeTechMeters,makeDashboard,makeSnakeSVG};

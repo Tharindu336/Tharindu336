@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),zlib=require('node:zlib');
 const root=path.resolve(__dirname,'..');
 function filesIn(dir){return fs.readdirSync(path.join(root,dir),{withFileTypes:true}).flatMap(e=>e.isDirectory()?filesIn(dir+'/'+e.name):[dir+'/'+e.name]);}
-const files=['README.md','PROFILE.md','ICON-LICENSES.txt','index.html','layout.css','glass.css','app.js','tracker.js','snake.js','snake-engine.js','tools.js','profile-data.js','profile-cover.svg','profile-tech.svg','profile-activity.svg','profile-snake-still.svg','profile-snake.gif','generated/profile-data.json',...filesIn('scripts'),...filesIn('tests'),...filesIn('.github')];
+const files=['README.md','PROFILE.md','ICON-LICENSES.txt','index.html','layout.css','glass.css','app.js','tracker.js','snake.js','snake-engine.js','tools.js','profile-data.js','profile-cover.svg','profile-link-portfolio.svg','profile-link-connect.svg','profile-tech.svg','profile-activity.svg','profile-snake-still.svg','profile-snake.gif','generated/profile-data.json',...filesIn('scripts'),...filesIn('tests'),...filesIn('.github')];
 const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
 for(const match of readme.matchAll(/(?:\]\(|(?:src|srcset)=")[.]\/([^)"]+)/g)){if(!files.includes(match[1]))throw Error('README reference missing from bundle: '+match[1]);}
 function crc32(buffer){let c=0xffffffff;for(const b of buffer){c^=b;for(let i=0;i<8;i++)c=(c>>>1)^((c&1)?0xedb88320:0);}return (c^0xffffffff)>>>0;}
