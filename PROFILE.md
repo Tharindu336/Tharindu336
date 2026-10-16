@@ -6,7 +6,7 @@ The profile README gives a glass-inspired preview and links to the interactive p
 
 Run `node scripts/preview.cjs`, then open http://127.0.0.1:8000/ to preview the interactive portfolio locally.
 
-The GitHub Pages workflow deploys the static portfolio on pushes to `main`. If the first deployment cannot enable Pages automatically, open the repository's **Settings → Pages**, select **GitHub Actions** as the build and deployment source, then rerun the **Deploy portfolio site** workflow.
+The GitHub Pages workflow deploys the static portfolio on pushes to `main`. Pages must first be enabled by a repository administrator: open **Settings → Pages**, select **GitHub Actions** as the build and deployment source, then rerun the **Deploy portfolio site** workflow. The workflow token cannot enable Pages for this repository.
 
 ## Upload the complete profile
 
